@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" version="1.9" modules="professional" RootPath=".">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="CTRLS" Value="3"/>
+    <ROW Property="ProductCode" Value="{C56BDFFF-DF6F-4B69-826C-2D818CDD62AD}"/>
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPPRODUCTICON" Value="controlPanelIcon.exe"/>
+    <ROW Property="BannerBitmap" Value="installer_background.jpg"/>
+    <ROW Property="DialogBitmap" Value="installer_background_dialog.jpg"/>
+    <ROW Property="Manufacturer" Value="CodeUnit"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{E8450793-E989-4283-8B0E-C5E56FC54D15}"/>
+    <ROW Property="ProductName" Value="SAN Access"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="Deskto~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Images_DIR" Directory_Parent="TARGETDIR" DefaultDir="Images"/>
+    <ROW Directory="TARGETDIR" Directory_Parent="" DefaultDir="SourceDir"/>
+    <ROW Directory="Inputs_DIR" Directory_Parent="TARGETDIR" DefaultDir="Inputs"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="Application_Loader.exe" ComponentId="{252227E3-9A42-49AE-8960-81748AD35878}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Application_Loader.exe" FullKeyPath="TARGETDIR\Application_Loader.exe"/>
+    <ROW Component="AutoUpdate.exe" ComponentId="{D9898FAA-0932-45F8-AE1B-7A32CB5269D2}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="AutoUpdate.exe" FullKeyPath="TARGETDIR\AutoUpdate.exe"/>
+    <ROW Component="config.aup" ComponentId="{3B79F585-83A9-439C-AFA0-9BDA2876E8CE}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="config.aup" FullKeyPath="TARGETDIR"/>
+    <ROW Component="Inputs.txt" ComponentId="{DFF63985-3012-49BE-A184-55F5135E8235}" Directory_="Inputs_DIR" Attributes="0" Condition="" KeyPath="Inputs.txt" FullKeyPath="TARGETDIR\Inputs"/>
+    <ROW Component="Monitoring_Animation.gif" ComponentId="{940795FC-7270-4720-B792-12004559341B}" Directory_="Images_DIR" Attributes="0" Condition="" KeyPath="Monitoring_Animation.gif" FullKeyPath="TARGETDIR\Images"/>
+    <ROW Component="SAN_Access.exe" ComponentId="{707DA18A-59AF-4F29-91C7-F564855B5F35}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="SAN_Access.exe" FullKeyPath="TARGETDIR\SAN Access.exe"/>
+    <ROW Component="za.exe" ComponentId="{4CEF5E7B-5CAF-4641-92AC-AC8A379414E6}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="za.exe" FullKeyPath="TARGETDIR\7za.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Feature_Parent="" Title="MainFeature" Description="Description" Display="2" Level="1" Directory_="TARGETDIR" Attributes="0" Components="za.exe Application_Loader.exe AutoUpdate.exe config.aup Inputs.txt Monitoring_Animation.gif SAN_Access.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="AutoUpdate.exe" Component_="AutoUpdate.exe" FileName="AutoUp~1.exe|AutoUpdate.exe" Version="" Language="" Attributes="" SourcePath="..\SAN Access\Required Files\AutoUpdate.exe" SelfReg="false"/>
+    <ROW File="Monitoring_Animation.htm" Component_="Monitoring_Animation.gif" FileName="Monito~1.htm|Monitoring-Animation.htm" Version="" Language="" Attributes="" SourcePath="..\SAN Access\Required Files\Images\Monitoring-Animation.htm" SelfReg="false"/>
+    <ROW File="Monitoring_Still.htm" Component_="Monitoring_Animation.gif" FileName="Monito~2.htm|Monitoring-Still.htm" Version="" Language="" Attributes="" SourcePath="..\SAN Access\Required Files\Images\Monitoring-Still.htm" SelfReg="false"/>
+    <ROW File="Splash_Image.jpg" Component_="Inputs.txt" FileName="Splash~1.jpg|Splash_Image.jpg" Version="" Language="" Attributes="" SourcePath="..\SAN Access\Required Files\Inputs\Splash_Image.jpg" SelfReg="false"/>
+    <ROW File="Inputs.txt" Component_="Inputs.txt" FileName="Inputs.txt" Version="" Language="" Attributes="" SourcePath="..\SAN Access\Required Files\Inputs\Inputs.txt" SelfReg="false"/>
+    <ROW File="Monitoring_Animation.gif" Component_="Monitoring_Animation.gif" FileName="Monito~1.gif|Monitoring-Animation.gif" Version="" Language="" Attributes="" SourcePath="..\SAN Access\Required Files\Images\Monitoring-Animation.gif" SelfReg="false"/>
+    <ROW File="Monitoring_Still.gif" Component_="Monitoring_Animation.gif" FileName="Monito~2.gif|Monitoring-Still.gif" Version="" Language="" Attributes="" SourcePath="..\SAN Access\Required Files\Images\Monitoring-Still.gif" SelfReg="false"/>
+    <ROW File="SAN_Access.exe" Component_="SAN_Access.exe" FileName="SANAcc~1.exe|SAN Access.exe" Version="" Language="" Attributes="" SourcePath="..\SAN Access\Required Files\SAN Access.exe" SelfReg="false"/>
+    <ROW File="za.exe" Component_="za.exe" FileName="7za.exe" Version="" Language="" Attributes="" SourcePath="..\SAN Access\Required Files\7za.exe" SelfReg="false"/>
+    <ROW File="Application_Loader.exe" Component_="Application_Loader.exe" FileName="Applic~1.exe|Application_Loader.exe" Version="" Language="" Attributes="" SourcePath="..\SAN Access\Required Files\Application_Loader.exe" SelfReg="false"/>
+    <ROW File="Description.txt" Component_="config.aup" FileName="Descri~1.txt|Description.txt" Version="" Language="" Attributes="" SourcePath="..\SAN Access\Required Files\Description.txt" SelfReg="false"/>
+    <ROW File="config.aup" Component_="config.aup" FileName="config.aup" Version="" Language="" Attributes="" SourcePath="..\SAN Access\Required Files\config.aup" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Source="" Target="A higher version of [ProductName] is installed."/>
+    <ROW Action="AI_ViewReadme" Type="194" Source="viewer.exe" Target="[#Description.txt]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="AI_LaunchApp" Type="194" Source="viewer.exe" Target="[#Application_Loader.exe]"/>
+    <ROW Action="SET_TARGETDIR" Type="307" Source="TARGETDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="UpgradeCode" VersionMin="" VersionMax="ProductVersion" Language="" Attributes="1025" Remove=""/>
+    <ROW UpgradeCode="UpgradeCode" VersionMin="ProductVersion" VersionMax="" Language="" Attributes="2" Remove=""/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMergeModsComponent">
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="SAN_Access" Directory_="SHORTCUTDIR" Name="SANAcc~1|SAN Access" Component_="Application_Loader.exe" Target="[TARGETDIR]Application_Loader.exe" Arguments="" Description="SAN Access" Hotkey="0" Icon_="controlPanelIcon.exe" IconIndex="0" ShowCmd="1" WkDir=""/>
+    <ROW Shortcut="SAN_Access_1" Directory_="DesktopFolder" Name="SANAcc~1|SAN Access" Component_="Application_Loader.exe" Target="[TARGETDIR]Application_Loader.exe" Arguments="" Description="SAN Access" Hotkey="0" Icon_="controlPanelIcon.exe" IconIndex="0" ShowCmd="1" WkDir=""/>
+    <ROW Shortcut="SAN_Access_AutoUpdate" Directory_="SHORTCUTDIR" Name="SANAcc~2|SAN Access AutoUpdate" Component_="Application_Loader.exe" Target="[TARGETDIR]AutoUpdate.exe" Arguments="force" Description="AutoUpdate" Hotkey="0" Icon_="TARGETDIR_AutoUpdate.exe" IconIndex="0" ShowCmd="1" WkDir=""/>
+    <ROW Shortcut="SAN_Access_Uninstall" Directory_="SHORTCUTDIR" Name="SANAcc~3|SAN Access Uninstall" Component_="Application_Loader.exe" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Description="Uninstall" Hotkey="0" Icon_="SystemFolder_msiexec.exe" IconIndex="0" ShowCmd="1" WkDir=""/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="SystemFolder_msiexec.exe" SourcePath="&lt;uninstall.ico&gt;" Index="0"/>
+    <ROW Name="TARGETDIR_AutoUpdate.exe" SourcePath="Images\AutoUpdate.ico" Index="0"/>
+    <ROW Name="controlPanelIcon.exe" SourcePath="Images\Application_Icon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="installer_background.jpg" SourcePath="Images\installer_background.jpg"/>
+    <ROW Name="installer_background_dialog.jpg" SourcePath="Images\installer_background_dialog.jpg"/>
+    <ROW Name="viewer.exe" SourcePath="&lt;viewer.exe&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ATTRIBUTE name="Start" value="WelcomeDlg FolderDlg VerifyReadyDlg"/>
+    <ATTRIBUTE name="Progress" value="ProgressDlg"/>
+    <ATTRIBUTE name="End" value="ExitDialog"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMediaComponent">
+    <ATTRIBUTE name="InstallationType" value="1"/>
+    <ATTRIBUTE name="MediaSize" value="0"/>
+    <ATTRIBUTE name="Compress" value="1"/>
+    <ATTRIBUTE name="Package" value="10"/>
+    <ATTRIBUTE name="PackageName" value="Release\SAN Access Installer"/>
+    <ATTRIBUTE name="IconPath" value="Images\Application_Icon.ico?0"/>
+  </COMPONENT>
+</DOCUMENT>
