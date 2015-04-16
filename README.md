@@ -1,0 +1,48 @@
+# SAN Access
+
+Commerce I.T. commissioned a Storage Area Network (SAN) for use by the members of the Commerce Faculty, both Staff and Students. It was decided to manage access to the SAN system via a combination of the HTTP and FTP protocols and as such SAN Access provides the final user interface to the system. 
+
+While much of the behind the scenes work takes place on OBE1, Commerce I.T.’s web and FTP server, SAN Access ties the access to these various elements together in a cohesive, logical application that makes enables users to effectively manage their file space.
+
+Because SAN Access makes use of online protocols, access to the Commerce I.T. SAN is not restricted to the UCT network. Access from off-campus is therefore possible and makes this one of the strengths of implementing the SAN in this manner.
+
+Created by Craig Lotter, November 2007
+
+*********************************
+
+Project Details:
+
+Coded in Visual Basic .NET using Visual Studio .NET 2008
+Implements concepts such as FTP, file manipulation, MD5, web services, drag and drop.
+Level of Complexity: Simple
+
+*********************************
+
+Update 20080528.02:
+
+- Added 'Download All Files' functionality
+- Fixed loadsettings bug which affected currentusername and currentcontext variables
+- Added 'Delete All Files' functionality
+- Added 'Delete All Folders' functionality
+- Added 'Delete All Content' functionality
+
+*********************************
+
+Update 20080529.03:
+
+- Added 'Download All Folders' functionality
+- Added 'Download All Content' functionality
+
+*********************************
+
+Update 20080610.04:
+
+- Changed way in which SAN Access handles single file download requests
+
+*********************************
+
+Update 20080616.05:
+
+- Address password synchronisation issues by utilising password history
+- Now handles temporary accounts that don't have associated Novell network accounts
+- Added activity handler for log purposes
